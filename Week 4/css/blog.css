@@ -1,0 +1,271 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+  height: relative;
+	border: 0;
+	display: block;
+	color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+}
+
+/**SETUP**/
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+@media (max-width: 850px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  .nav-right {
+    position: fixed;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+    .sidebar, .sidebar-bold, .sidebar-text-1, .sidebar-text-1, #learn {
+      display: none;
+      float: right;
+    }
+
+
+}
+
+/**HEADER**/
+
+header {
+	background-color: #033048;
+  height: 80px;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.nav {
+	display: inline-block;
+	float: left;
+  width: 40%;
+}
+
+.logo {
+  color: white;
+  font-weight: 900;
+  font-size: 32px;
+  text-align: left;
+  margin: 20px 0 0 20px;
+  line-height: 1.4;
+}
+
+.options, .options li {
+  float: right;
+  display: inline-block;
+  text-align: center;
+  margin: 18px 20px 0 0;
+}
+
+.nav-right, .nav-right a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f9e42e;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+/**MAIN CONTAINER**/
+.main-container {
+  width: 100%;
+  background-color: #f0efef;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  line-height: 1.4;
+  height: relative;
+  padding: 5% 10% 5% 10%; 
+}
+
+.main-column {
+  width: 700px;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-block {
+  border-bottom-color: #033048;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin: 0;
+  padding: 0;
+  height: relative;
+}
+
+.blog-head {
+  color: #033048;
+  font-weight: semibold;
+  font-size: 40px;
+}
+
+.blog-body {
+  font-size: 16px;
+  font-weight: lighter;
+  display: inline-block;
+  color: #606161;
+  height: relative;
+}
+
+.blog-start {
+  height: 60px;
+  font-size: 60px;
+  font-weight: semibold;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  margin-left: 525px;
+  text-decoration: none;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #033048;
+  font-size: 24px;
+  font-weight: semibold;
+}
+
+.main {
+  display: inline-block;
+  float: left;
+}
+
+.sidebar {
+  width: 240px;
+  margin-left: 20px;
+}
+
+.sidebar-bold {
+  font-size: 32px;
+  font-weight: 900;
+  color: #033048;
+  text-decoration: none;
+}
+
+.sidebar-text-1 {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #033048;
+  text-decoration: none;
+}
+
+.sidebar-text-2 {
+  font-size: 22px;
+  font-weight: lighter;
+  color: #033048;
+  text-decoration: none;
+}
+
+#learn {
+  font-size: 22px;
+  font-weight: 700;
+  color: #033048;
+  text-decoration: none;
+}
+
+.about {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+a:hover {
+  color: #033048; 
+  font-size: 24px;
+  transition: 1.1s;
+}
+
+
+/**FOOTER**/
+.sign-up-container {
+  display: block;
+  height: 150px;
+  background-color: #f9e42e;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.sign-up-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #033048;
+  padding: 10px;
+  width: 200px;
+}
+
+.sign-up-button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+footer {
+  display: block;
+  height: relative;
+  background-color: #121212;
+  width: 100%;
+  padding-top: 40px;
+  margin: 0;
+  bottom: 0;
+}
+
+.footer-logo {
+  margin: 0;
+  color: #f9e42e;
+  text-align: center;
+  font-size: 36px;
+}
+
+.icons {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.icons img {
+  display: inline-block;
+  padding: 20px;
+}
+
+.copyright {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+  padding: 10px 10px;
+}
+
