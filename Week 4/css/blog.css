@@ -1,3 +1,18 @@
+/*
+
+Awesome job on HW4! Your layout looks perfect, and you did a fantastic job implementing concepts from class. A few notes:
+
+- You're only using the reset.css stylesheet, so I would delete normalize.css. You always want to remove files you're not using to keep your project organized
+- Already using media queries?! What a champ!! You probably don't need the fixed positioning for the nav-right since in a responsive view you'll want it to wrap. Maybe remove the floats and set it to width: 100%? Let me know if you have questions about media queries!
+- For the most part, you did a great job using semantic naming conventions. My only note would be for items like sidebar-text-1 and sidebar-text-2; these don't explain what the class is doing and would be hard to reuse or make sense of if someone else were working on your code
+- Fantastic job playing around with pseudo selectors and transitions! I always use transitions when I'm adding a hover state; it definitely improves the experience
+- Instead of the blog-start class, you can use the :first-letter pseudo selector and make the first letter in each blog a drop cap!
+- I would usually avoid using a section within a section; maybe make a container div around the two sections instead?
+- You're using the clearfix class in a few places where it's not being used; make sure you're only using it to clear floats so that content will display below it. To test, just remove the class and see if it still looks OK
+- Your HTML indentation is literally perfect; it makes me so happy. Probably the best I've seen so far.
+
+*/
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -58,8 +73,6 @@ html, body {
       display: none;
       float: right;
     }
-
-
 }
 
 /**HEADER**/
@@ -109,7 +122,7 @@ header {
   bottom: 0;
   line-height: 1.4;
   height: relative;
-  padding: 5% 10% 5% 10%; 
+  padding: 5% 10% 5% 10%;
 }
 
 .main-column {
@@ -203,7 +216,7 @@ header {
 }
 
 a:hover {
-  color: #033048; 
+  color: #033048;
   font-size: 24px;
   transition: 1.1s;
 }
@@ -268,4 +281,3 @@ footer {
   text-align: center;
   padding: 10px 10px;
 }
-
